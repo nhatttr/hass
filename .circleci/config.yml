@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/repo
     docker:
-      - image: circleci/node:12-browsers
+      - image: cimg/node:12.16
     steps:
       - checkout
       - restore_cache:
@@ -30,7 +30,7 @@ jobs:
   deploy:
     working_directory: ~/repo
     docker:
-      - image: innovatorjapan/awscli:latest
+      - image: cimg/aws:2023.03
     steps:
       - attach_workspace:
           at: .
