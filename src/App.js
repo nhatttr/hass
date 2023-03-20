@@ -7,7 +7,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Tập tành <code>src/App.js</code> cho biết với người ta.
+          Edit <code>src/App.js</code> and save to reload.
+                 XONG RỒI NHẬU THOY ANH EM
         </p>
         <a
           className="App-link"
