@@ -30,7 +30,7 @@ jobs:
   deploy:
     working_directory: ~/repo
     docker:
-      - image: cimg/aws:2023.03
+      - image: innovatorjapan/awscli:latest
     steps:
       - attach_workspace:
           at: .
