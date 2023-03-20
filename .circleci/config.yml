@@ -22,8 +22,7 @@ jobs:
           command: |
             if [ $CIRCLE_BRANCH = 'circleci-project-setup' ]; then
               npm run build
-            fi
-      - persist_to_workspace:
+           - persist_to_workspace:
           root: .
           paths:
             - .
