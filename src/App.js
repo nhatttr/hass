@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Họp <xong>src/App.js</code> rồi thì đi nhậu thôi AE.
+          Tập tành <code>src/App.js</code> cho biết với người ta.
         </p>
         <a
           className="App-link"
