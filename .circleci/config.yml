@@ -39,7 +39,6 @@ jobs:
           command: |
             if [ $CIRCLE_BRANCH = 'circleci-project-setup' ]; then
               aws s3 sync build s3://s3dem0 --delete --exact-timestamps;
-            fi
 workflows:
   build_and_deploy:
     jobs:
