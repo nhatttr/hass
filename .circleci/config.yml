@@ -37,7 +37,6 @@ jobs:
       - checkout
       - run: aws s3 sync ./app/build s3://s3dem1
     
-
 workflows:
   build_test_deploy:
     jobs:
