@@ -1,4 +1,5 @@
 version: 2.1
+
 jobs:
   build:
     machine:
@@ -35,8 +36,9 @@ jobs:
       - attach_workspace:
           at: .
       - checkout
-      - run: aws s3 sync ./app/build s3://s3dem1
+      - run: aws s3 sync ./app/build s3://ci-cd-example
     
+
 workflows:
   build_test_deploy:
     jobs:
